@@ -1,0 +1,380 @@
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #606060;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Open Sans', sans-serif;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration:none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/*                  основные            */
+h2{
+    color:#000;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*              header              */
+header{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.header__container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+    .header__container img{
+        width: 148px;
+        height: 36.23px;
+    }
+    .header__nav ul li{
+        float:left;
+        padding-left: 40px;
+        list-style-type: none;
+    }
+    .header__nav ul li a{
+        float: right;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color:#4F5665;
+        text-decoration: none;
+    }
+    .header__nav ul li a:hover{
+        border-bottom: 1px solid grey;
+    }
+    .in{
+        margin-right: 30px;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color:#0B132A;
+        text-decoration: none;
+    }
+    .in:hover{
+        border-bottom: 1px solid grey;
+    }
+    .up{
+        padding: 13px 45px 13px 45px;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        border: 1px solid #F53855;
+        border-radius: 50px;
+        color: #F53855;
+        text-decoration:none;
+    }
+/*          buttons     */
+.buttons{
+    margin-top: 130px;
+    display:flex;
+    justify-content: space-between;
+}
+    .buttons__text h2{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .buttons__text p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    .button{
+        padding: 18px 77px 18px 77px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+
+        background-color: #F53838;
+        border: 2px solid #F53838;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .buttons__img{
+        width: 612px;
+        height: 383px;
+        margin-left: 40px;
+        background: url("img/Illustration_1.png")no-repeat;
+    }
+/*              info            */
+.info__for__clients{
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+    .info__for__clients__group1{
+        padding-top: 30px;
+        padding-right: 130px;
+        border-right: 2px solid #EEEFF2;
+        display: flex;
+        justify-content: start;
+    }
+    .info__for__clients__group1__block{
+        padding-left: 30px;
+    }
+    .info__for__clients__group1__block h2{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .info__for__clients__group1__block p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4F5665;
+    }
+    .info__for__clients__group1__img{
+        width: 55px;
+        height: 55px;
+        background: url("img/user.png") no-repeat;
+    }
+    /*              group 2         */
+    .info__for__clients__group2{
+        padding-top: 30px;
+        padding-left: 110px;
+        padding-right: 130px;
+        border-right: 2px solid #EEEFF2;
+        display: flex;
+        justify-content: start;
+    }
+    .info__for__clients__group2__block{
+        padding-left: 30px;
+    }
+    .info__for__clients__group2__block h2{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .info__for__clients__group2__block p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4F5665;
+    }
+    .info__for__clients__group2__img{
+        width: 55px;
+        height: 55px;
+        background: url("img/location.png") no-repeat;
+    }
+
+    /*              group 3             */
+
+    .info__for__clients__group3{
+        padding-top: 30px;
+        padding-left: 110px;
+        display: flex;
+        justify-content: start;
+    }
+    .info__for__clients__group3__block{
+        padding-left: 30px;
+    }
+    .info__for__clients__group3__block h2{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .info__for__clients__group3__block p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4F5665;
+    }
+    .info__for__clients__group3__img{
+        width: 55px;
+        height: 55px;
+        background: url("img/Server.png") no-repeat;
+    }
+/*        info__for__clients__plus__and__minus        */
+.info__for__clients__plus__and__minus{
+    margin-top: 100px;
+    background-color: #F7F7F7;
+}
+    .info__for__clients__plus__and__minus_flex{
+        padding-top: 150px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .info__for__clients__plus__and__minus__title{
+        width: 428px;
+        height: 365px;
+    }
+        .info__for__clients__plus__and__minus__title h2{
+            color:#000;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .info__for__clients__plus__and__minus__title p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    .info__for__clients__plus__and__minus__img{
+        width: 509px;
+        height: 415px;
+        background: url("img/Illustration_2.png") no-repeat;
+    }
+/*              оптимизация под телефон         */
+@media screen and (max-width:700px){
+
+    /*          header          */
+    .header__container img{
+        margin-left: 25%;
+    }
+    .in{
+       opacity: 0;
+    }
+    .up{
+        opacity: 0;
+    }
+    .header__nav{
+        opacity: 0;
+    }
+    .header__sign{
+        opacity: 1;
+    }
+
+    /*          buttons         */
+
+    .buttons {
+        margin: 0 auto;
+    }
+
+    .buttons__text{
+        padding-left: 25px;
+        text-align: center;
+    }
+    .buttons__img{
+        display: none;
+    }
+    /*          info__for__clients      */
+    .info__for__clients{
+        display: block;
+    }
+    .info__for__clients__group1{
+        padding-left: 35%;
+        padding-bottom: 35px;
+        border:none;
+    }
+    .info__for__clients__group2{
+        padding-top: 35px;
+        padding-left: 35%;
+        padding-bottom: 35px;
+        border:none;
+    }
+    .info__for__clients__group3{
+        padding-left: 35%;
+        padding-top: 35px;
+    }
+    /*          info__for__clients__plus__and__minus          */
+    .info__for__clients__plus__and__minus__img{
+        display: none;
+    }
+    .info__for__clients__plus__and__minus__title{
+        padding-left: 25%;
+    }
+}
