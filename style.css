@@ -774,9 +774,11 @@ header{
         padding-left: 234px;
     }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:480px){
     .header__container img{
-        margin: 0 20px;
+        width: 149px;
+        height: 37px;
+        margin: 0 auto;
     }
     .buttons{
         margin: 0 auto;
@@ -789,14 +791,14 @@ header{
     }
     /*          info__for__clients__plus__and__minus    */
     .info__for__clients__plus__and__minus{
-        width: 118%;
+        width: 635px;
     }
     .info__for__clients__plus__and__minus_flex{
         margin: 0 auto;
     }
     /*          choouse__for__plan__blocks  */
     .choouse__for__plan{
-        width: 118%;
+        width: 633px;
     }
     .choouse__for__plan__block__1{
         position: relative;
@@ -812,11 +814,11 @@ header{
     }
     /*          map         */
     .map{    
-        width: 118%;
+        width: 631px;
     }
     /*  sponser         */
     .sponser{
-        width: 84%;
+        width: 480px;
         padding-left: 155px;
     }
 }   
