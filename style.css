@@ -779,6 +779,7 @@ header{
         width: 149px;
         height: 37px;
         margin: 0 auto;
+        
     }
     .buttons{
         margin: 0 auto;
@@ -814,6 +815,8 @@ header{
     }
     /*          map         */
     .map{    
+        position: relative;
+        top: 100px;
         width: 631px;
     }
     /*  sponser         */
