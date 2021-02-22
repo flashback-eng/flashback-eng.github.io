@@ -480,6 +480,7 @@ header{
     }
     /*          info__for__clients__plus__and__minus          */
     .info__for__clients__plus__and__minus{
+        width: 108%;
         height: 100%;
     }
     .info__for__clients__plus__and__minus__img{
@@ -490,6 +491,35 @@ header{
     }
     /*              choouse__for__plan__blocks          */
     .choouse__for__plan__blocks{
+        position: absolute;
         display: block;
+    }
+    .choouse__for__plan__block__1{
+        position: relative;
+        width: 250px;
+        left: 95px;
+    }
+    .choouse__for__plan__block__2{
+        position: relative;
+        width: 250px;
+        top:20px;
+        left: 95px;
+    }
+    .choouse__for__plan__block__3{
+        position: relative;
+        width: 250px;
+        top:54px;
+        left: 95px;
+    }
+    .choouse__for__plan{
+        width: 108%;
+    }
+    .choouse__for__plan__title{
+        height: 203%;
+    }
+}
+@media screen and (max-width:450px){
+    .header__container img{
+        margin: 0 20px;
     }
 }
